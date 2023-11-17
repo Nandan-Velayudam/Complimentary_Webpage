@@ -1,0 +1,27 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>Complementry Web page</title>
+</head>
+<body>
+<form>
+<input type="text" value="Enter Your Name">
+</form>
+<button style="background-color: navy; color: white;" onclick="givesentence()">Click for a random sentence!</button>
+
+<script>
+function givesentence() {
+  var compliments = [
+    "You are a Good Person",
+    "You're so Talented",
+    "I really admire your skills",
+    "You make even the most boring things fun",
+  ];
+  
+  var complimentIndex = Math.floor(Math.random() * 4);
+  alert(compliments[complimentIndex]);
+}
+</script>
+
+</body>
+</html>
